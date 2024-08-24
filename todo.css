@@ -1,0 +1,129 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap');
+
+ 
+:root {
+  --primary: #1aac83;
+  --error: #e7195a;
+}
+body {
+  background: #f1f1f1;
+  margin: 0;
+  font-family: "Poppins";
+}
+header {
+  background: #fff;
+}
+header .container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav a {
+  text-decoration: none;
+  color: #333;
+  margin: 0 15px;
+  font-weight: 500;
+  transition: color 0.3s, border-bottom 0.3s;
+}
+header nav a:hover {
+  color: var(--primary);
+  border-bottom: 2px solid var(--primary);
+}
+.pages {
+  max-width: 1400px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.home {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 100px;
+}
+
+#workout-details {
+  background: #fff;
+  border-radius: 4px;
+  margin: 20px auto;
+  padding: 20px;
+  position: relative;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+}
+
+.new-workout {
+  background: #fff;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+}
+
+.new-workout label, .new-workout input {
+  display: block;
+}
+
+.new-workout input {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.new-workout button {
+  background: var(--primary);
+  border: 0;
+  color: #fff;
+  padding: 10px;
+  font-family: "Poppins";
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+div.error {
+  padding: 10px;
+  background: #ffefef;
+  border: 1px solid var(--error);
+  color: var(--error);
+  border-radius: 4px;
+  margin: 20px 0;
+}
+
+input.error {
+  border: 1px solid var(--error);
+}
+/* Style for each dynamically added workout div */
+#workout-details div {
+background-color: #f0f8ff;
+padding: 15px;
+margin-bottom: 15px;
+border-left: 5px solid #1e90ff;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+transition: transform 0.2s ease-in-out;
+}
+
+#workout-details div:hover {
+transform: scale(1.02);
+}
+
+/* Styling for the exercise title */
+#workout-details div h4 {
+margin: 0;
+font-size: 1.3em;
+color: #1e90ff;
+}
+
+/* Styling for the load and reps */
+#workout-details div h5, 
+#workout-details div h6 {
+margin: 5px 0;
+font-size: 1.1em;
+color: #4682b4;
+font-weight: 500;
+}
